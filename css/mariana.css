@@ -1,48 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
+
 /* ======================== NAVBAR ========================*/
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-evenly;
     background: rgb(207, 207, 207);
     padding: 5px 0 0 5px;
 }
-.navbar-logo{
+
+.navbar-logo {
     width: 120px;
 }
-.navbar-logo img{
+
+.navbar-logo img {
     width: 120px;
     border-radius: 2px;
 }
-.navlink{
+
+.navlink {
     display: flex;
     align-items: center;
     list-style: none;
 }
-.navlink li{
+
+.navlink li {
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     margin: 0 4px 0 4px;
     padding: 0 5px 0 5px;
 }
-.navlink a{
-    padding: 2px 5px 2px 5px ;
+
+.navlink a {
+    padding: 2px 5px 2px 5px;
 }
-.navlink a:hover{
+
+.navlink a:hover {
     background: rgb(170, 170, 170);
     border-radius: 5px;
 }
 
-.line{
+.line {
     background: #000;
     width: 2px;
     height: 18px;
@@ -50,45 +58,66 @@ a{
 }
 
 /* ======================== SLIDER ========================*/
-.slider{
+.slider {
     width: 100%;
     height: 65vh;
     overflow: hidden;
-    }
+}
 
-.slider ul{
+.slider ul {
     display: flex;
     animation: slide 16S infinite alternate linear;
     width: 400%;
 }
 
-.slider li{
+.slider li {
     display: flex;
     justify-content: center;
     width: 100%;
     list-style: none;
 }
-    
-.slider img{
+
+.slider img {
     width: 90%;
     margin-top: -13vh;
     object-fit: cover;
 }
-@keyframes slide{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
 
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
+    20% {
+        margin-left: 0%;
+    }
 
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
 
-.objetc-ini{
+.objetc-ini {
     display: flex;
     align-items: center;
     width: 30%;
@@ -96,7 +125,7 @@ a{
     margin-top: -4vh;
 }
 
-.line-object{
+.line-object {
     background: rgb(190, 112, 190);
     width: 30px;
     height: 24vh;
@@ -104,11 +133,11 @@ a{
     margin-right: 6px;
 }
 
-.texto-object{
+.texto-object {
     margin-top: 6vh;
 }
 
-.texto-object a{
+.texto-object a {
     background: rgb(190, 112, 190);
     color: #fff;
     float: right;
@@ -117,49 +146,57 @@ a{
     border-radius: 5px;
 }
 
-.ace-content{
+.ace-content {
     display: flex;
     justify-content: space-around;
     width: 90%;
     margin: auto;
     margin-top: 20vh;
 }
-.ace{
+
+.ace {
     width: 26%;
     margin: 0 20px 0 20px;
 }
 
 .ace .h1,
-.h2, .h3{
+.h2,
+.h3 {
     font-weight: bolder;
     margin-bottom: 10px;
 }
-.ace .h1{
+
+.ace .h1 {
     color: rgb(144, 168, 35);
 }
-.ace .h2{
+
+.ace .h2 {
     color: rgb(38, 209, 221);
 }
-.ace .h3{
+
+.ace .h3 {
     color: rgb(114, 25, 25);
 }
-.ace p{
+
+.ace p {
     margin-bottom: 10px;
     text-align: justify;
 }
 
 
 
-.suscrip{
+.suscrip {
     width: 100%;
     height: 60vh;
 }
-.suscrip img{
+
+.suscrip img {
     width: 100%;
     height: 60vh;
     object-fit: cover;
 }
-.footer{
+
+.footer {
     background: #000;
     display: block;
     width: 100%;
@@ -168,28 +205,50 @@ a{
     padding: 8px 0 8px 0;
 }
 
-.nosimg{
+.nosimg {
     width: 100%;
     height: 50vh;
 }
-.nosimg img{
+
+.nosimg img {
     width: 100%;
 }
 
-.mivi{
+.mivi {
     background-color: red;
     display: flex;
     width: 60%;
     margin: auto;
     margin-top: 50px;
 }
-.miviline{
+
+.miviline {
     width: 40px;
     height: 20vh;
     background: yellow;
     margin-right: 10px;
 }
 
-.mivi-text1{
+.mivi-text1 {
     background: blue;
+}
+
+.text-sus {
+    background: red;
+    position: absolute;
+    top: 185vh;
+    left: 60vh;
+}
+
+.text-sus .input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input {
+    width: 45%;
+    padding: 4px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #000;
 }
