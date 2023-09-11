@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
@@ -12,10 +13,13 @@ a {
 /* ======================== NAVBAR ========================*/
 
 .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-evenly;
-    background: rgb(207, 207, 207);
+    background: rgb(202, 202, 202);
     padding: 5px 0 0 5px;
+    z-index: 999;
 }
 
 .navbar-logo {
@@ -57,6 +61,28 @@ a {
     margin: 5px 3px 0 7px;
 }
 
+/* ======================== REDES SOCIALES ========================*/
+.redes-sociales{
+    position: fixed;
+    width: 5vh;
+    height: 100vh;
+    right: 20px;
+    z-index: 999;
+}
+.redes-sociales .enlaces-redes{
+    margin-top: 30vh;
+}
+.enlaces-redes a{
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.redes-sociales img{
+    width: 5vh;
+    height: 5vh;
+}
 /* ======================== SLIDER ========================*/
 .slider {
     width: 100%;
@@ -142,7 +168,7 @@ a {
     color: #fff;
     float: right;
     margin: 8px 0 8px 0;
-    padding: 0 5px 0 5px;
+    padding: 3px 5px 3px 5px;
     border-radius: 5px;
 }
 
@@ -186,14 +212,16 @@ a {
 
 
 .suscrip {
+    position: relative;
     width: 100%;
     height: 60vh;
 }
 
 .suscrip img {
     width: 100%;
-    height: 60vh;
+    height: 75vh;
     object-fit: cover;
+    margin-top: -15vh;
 }
 
 .footer {
@@ -205,39 +233,19 @@ a {
     padding: 8px 0 8px 0;
 }
 
-.nosimg {
-    width: 100%;
-    height: 50vh;
-}
-
-.nosimg img {
-    width: 100%;
-}
-
-.mivi {
-    background-color: red;
-    display: flex;
-    width: 60%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.miviline {
-    width: 40px;
-    height: 20vh;
-    background: yellow;
-    margin-right: 10px;
-}
-
-.mivi-text1 {
-    background: blue;
-}
 
 .text-sus {
-    background: red;
     position: absolute;
-    top: 185vh;
-    left: 60vh;
+    top: 34vh;
+    left: 64vh;
+}
+
+.text-sus p{
+    color: #fff;
+    width: 68vh;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 22px;
 }
 
 .text-sus .input {
@@ -246,9 +254,223 @@ a {
 }
 
 .input input {
-    width: 45%;
-    padding: 4px;
+    width: 47%;
+    padding: 6px;
     border-radius: 10px;
     border: none;
-    border: 2px solid #000;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.terco{
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+
+/* ======================== NOSOTROS ========================*/
+.nosimg {
+    width: 100%;
+    height: 50vh;
+}
+
+.nosimg img {
+    width: 100%;
+}
+.mivi {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.miviline1 {
+    width: 60px;
+    height: 13vh;
+    margin-top: 5vh;
+    background: rgb(250, 237, 58);
+    margin-right: 10px;
+}
+.miviline2 {
+    width: 40px;
+    height: 12vh;
+    margin-top: 4vh;
+    background: rgb(236, 109, 109);
+    margin-right: 10px;
+}
+
+.mivi-text1 {
+    display: flex;
+    width: 35%;
+    text-align: justify;
+    margin-right: 20vh;
+
+}
+.mivi-text1 h1{
+    color: rgb(255, 242, 67);
+    font-size: 45px;
+}
+.mivi-text2 h1{
+    color: red;
+    font-size: 45px;
+}
+
+.mivi-text2{
+    display: flex;
+    width: 35%;
+    text-align: justify;
+}
+.nosotros{
+    margin: 2vh 0 0 10vh;
+    width: 22%;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+}
+
+.nosotros-montaña{
+    position: relative;
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: -.4vh;
+}
+.nosotros-montaña img{
+    width: 100%;
+}
+
+.pacho{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 38vh;
+}
+
+.pacho img{
+    width: 38vh;
+    height: 38vh;
+    margin-top: -2vh;
+}
+
+.texto-nosotros{
+    display: flex;
+    width: 40%;
+}
+.linenoso{
+    background: brown;
+    width: 20px;
+    height: 35vh;
+    margin-right: 20px;
+}
+.nostp1{
+    width: 70%;
+    text-align: justify;
+    margin-top: 3vh;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.nostp2{
+    width: 80%;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.inicio-product{
+    width: 100%;
+}
+.inicio-product .imagen-fondo{
+    width: 100%;
+}
+
+.contenido-product{
+    position: absolute;
+    display: flex;
+    top: 6vh;
+}
+.contenido-product img{
+    width: 60%;
+    margin-left: -10vh;
+}
+
+.text-product h1{
+    width: 50%;
+    margin-top: 10vh;
+    margin-bottom: 28vh;
+    margin-left: -5vh;
+    border-bottom: 2px solid #000;
+}
+.text-product p{
+    width: 75%;
+    font-size: 25px;
+    margin-left: 5vh;
+    text-align: justify;
+}
+
+.productos-cono{
+    margin-top: -3vh;
+}
+
+.cono-prod{
+    display: flex;
+    padding-left: 25vh;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cono-prod img{
+    width: 35vh;
+    border-radius: 50px;
+    z-index: 100;
+}
+.text-cono{
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px 30px;
+    padding-left: 10vh;
+    margin-left: -8vh;
+    background: rgb(224, 224, 224);
+}
+.text-cono p{
+    margin-right: 5vh;
+    text-align: justify;
+}
+.text-cono a{
+    background: #9eae18;
+    border-radius: 10px;
+    padding: 3px 20px;
+    color: #fff;
+    float: right;
+    margin-top: 15px;
+    margin-right: 80px;
+}
+
+.cono-prod.cono2 .text-cono{
+    margin-left: 50vh;
+    padding-left: 5vh;
+    padding-right: 8vh;
+    margin-right: -10vh;
+}
+.cono-prod.cono2 .text-cono a{
+    float: left;
+    background: #603e34;
+}
+.cono-prod.cono2 .text-cono p{
+    padding-left: 3vh;
+}
+.cono-prod.cono3{
+    padding-left: 34vh;
+}
+.cono-prod.cono3 .text-cono a{
+    background: #e5d13a;
+}
+
+.content-card{
+    position: relative;
+}
+
+.cards-nosotros{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.cards-nosotros img{
+    width: 35vh;
 }
