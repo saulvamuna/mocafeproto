@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 a {
     text-decoration: none;
     color: #000;
@@ -92,6 +91,8 @@ a {
     width: 100%;
     height: 65vh;
     overflow: hidden;
+    animation-name: slideranimate;
+    animation-duration: 4s;
 }
 
 .slider ul {
@@ -111,6 +112,8 @@ a {
     width: 90%;
     margin-top: -13vh;
     object-fit: cover;
+    animation-name: imgslide;
+    animation-duration: 1.5s;
 }
 
 @keyframes slide {
@@ -146,13 +149,21 @@ a {
         margin-left: -300%;
     }
 }
+@keyframes imgslide{
+    0%{
+        filter: blur(20px);
+        /* margin-top: -50vh; */
+    }
+}
 
 .objetc-ini {
     display: flex;
     align-items: center;
-    width: 30%;
-    margin-left: 40vh;
-    margin-top: -4vh;
+    width: 45%;
+    margin-left: 27vh;
+    margin-top: -8vh;
+    animation-name: object-ini;
+    animation-duration: 2s;
 }
 
 .line-object {
@@ -175,6 +186,18 @@ a {
     padding: 3px 5px 3px 5px;
     border-radius: 5px;
 }
+.texto-object p{
+    font-size: 30px;
+}
+
+@keyframes object-ini{
+    0%{
+        scale: 25%;
+    }
+    100%{
+        scale: 100%;
+    }
+}
 
 .ace-content {
     display: flex;
@@ -187,6 +210,21 @@ a {
 .ace {
     width: 26%;
     margin: 0 20px 0 20px;
+
+    view-timeline-name: --pacho;
+    view-timeline-axis: block;
+    animation-timeline: --pacho;
+    animation-name: ace;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+@keyframes ace{
+    from{
+        scale: 25%;
+    }
+    to{
+        scale: 100%;
+    }
 }
 
 .ace .h1,
@@ -242,8 +280,22 @@ a {
     position: absolute;
     top: 34vh;
     left: 55vh;
-}
 
+    view-timeline-name: --pacho;
+    view-timeline-axis: block;
+    animation-timeline: --pacho;
+    animation-name: text-sus;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+@keyframes text-sus{
+    from{
+        transform: translateX(-50vh);
+    }
+    to{
+        transform: translateX(20vh);
+    }
+}
 .text-sus p {
     color: #fff;
     width: 68vh;
@@ -281,6 +333,14 @@ a {
 
 .nosimg img {
     width: 100%;
+    animation-name: imgnosotros;
+    animation-duration: 2s;
+}
+
+@keyframes imgnosotros{
+    0%{
+        transform: translateY(-50vh);
+    }
 }
 
 .mivi {
@@ -312,13 +372,16 @@ a {
     width: 35%;
     text-align: justify;
     margin-right: 20vh;
-
+    animation-name: mivi1;
+    animation-duration: 2s;
 }
 
 .mivi-text1 h1 {
     color: rgb(255, 242, 67);
     font-size: 45px;
 }
+
+
 
 .mivi-text2 h1 {
     color: red;
@@ -329,6 +392,18 @@ a {
     display: flex;
     width: 35%;
     text-align: justify;
+    animation-name: mivi2;
+    animation-duration: 2s;
+}
+@keyframes mivi1{
+    0%{
+        transform: translateX(-40vh);
+    }
+}
+@keyframes mivi2{
+    0%{
+        transform: translateX(40vh);
+    }
 }
 
 .nosotros {
@@ -349,21 +424,53 @@ a {
     width: 100%;
 }
 
+@keyframes showpacho{
+    from{
+        transform: translateX(-40vh);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
 .pacho {
     display: flex;
     justify-content: center;
     position: absolute;
     bottom: 28vh;
+
+    
 }
 
 .pacho img {
     width: 38vh;
     height: 38vh;
-}
 
+    view-timeline-name: --img;
+    view-timeline-axis: block;
+    animation-timeline: --img;
+    animation-name: showpachoimg;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+@keyframes showpachoimg{
+    from{
+        scale: 25%;
+    }
+    to{
+        scale: 100%;
+    }
+}
 .texto-nosotros {
     display: flex;
     width: 40%;
+
+    view-timeline-name: --pacho;
+    view-timeline-axis: block;
+    animation-timeline: --pacho;
+    animation-name: showpacho;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
 }
 
 .linenoso {
@@ -404,6 +511,13 @@ a {
 .contenido-product img {
     width: 60%;
     margin-left: -10vh;
+    animation: productimg 2s;
+}
+@keyframes productimg{
+    0%{
+        transform: translateX(-80vh);
+    }
+
 }
 
 .text-product h1 {
@@ -412,6 +526,13 @@ a {
     margin-bottom: 23vh;
     margin-left: -5vh;
     border-bottom: 2px solid #000;
+    animation: producth1 2s;
+}
+@keyframes producth1{
+    0%{
+        transform: translateY(-20vh);
+    }
+
 }
 
 .text-product p {
@@ -419,6 +540,13 @@ a {
     font-size: 25px;
     margin-left: 5vh;
     text-align: justify;
+    animation: productp 2s;
+}
+@keyframes productp{
+    0%{
+        transform: translateX(60vh);
+    }
+
 }
 
 .productos-cono {
@@ -430,6 +558,21 @@ a {
     padding-left: 25vh;
     align-items: center;
     margin-bottom: 30px;
+
+    view-timeline-name: --pacho;
+    view-timeline-axis: block;
+    animation-timeline: --pacho;
+    animation-name: showproduc1;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+@keyframes showproduc1{
+    from{
+        transform: translateX(-50vh);
+    }
+    to{
+        transform: translateX(0vh);
+    }
 }
 
 .cono-prod img {
@@ -461,7 +604,23 @@ a {
     margin-top: 15px;
     margin-right: 80px;
 }
+.cono-prod.cono2{
+    view-timeline-name: --pacho;
+    view-timeline-axis: block;
+    animation-timeline: --pacho;
+    animation-name: showproduc2;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
 
+@keyframes showproduc2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .cono-prod.cono2 .text-cono {
     margin-left: 50vh;
     padding-left: 5vh;
@@ -490,6 +649,7 @@ a {
     position: relative;
 }
 
+
 .content-card .imgfondo {
     width: 100%;
     margin-bottom: -.5vh;
@@ -502,8 +662,22 @@ a {
     position: absolute;
     left: 25vh;
     bottom: 25vh;
-}
 
+    view-timeline-name: --pacho;
+    view-timeline-axis: block;
+    animation-timeline: --pacho;
+    animation-name: showcard;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+@keyframes showcard{
+    from{
+        scale: 25%;
+    }
+    to{
+        scale: 100%;
+    }
+}
 .cards-nosotros img {
     width: 38vh;
 }
@@ -516,7 +690,102 @@ a {
 }
 
 .card-texto a {
-    background: blue;
     padding: 8px 20px;
     border-radius: 10px;
+}
+
+.card-texto .a1{
+    background: #ff5241;
+}
+.card-texto .a2{
+    background: #c37ed2;
+}
+.card-texto .a3{
+    background: #80ddf4;
+}
+
+.recetas-cabecera img{
+    width: 100%;
+
+    animation: imgrecetas 2s;
+}
+@keyframes imgrecetas{
+    0%{
+        transform: translateY(-60vh);
+    }
+}
+.recetas-cabecera h1{
+    font-size: 60px;
+    border-bottom: 3px solid #000;
+    width: 47%;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+    animation: h1cabecera 2s;
+}
+
+.recetas-cabecera p{
+    text-align: center;
+    font-size: 33px;
+    animation: h1cabecera 2s;
+}
+@keyframes h1cabecera{
+    0%{
+       scale: 25%;
+    }
+}
+.recetas-p1{
+    background-image: url(../img/primerasrecetasfondo.png);
+    width: 100%;
+    height: 90vh; 
+    margin-top: 20vh;
+}
+.recetas{
+    display: flex;
+    align-items: center;
+    width: 55%;
+    margin-left: 35vh;
+    margin-bottom: 5vh;
+
+    view-timeline-name: --pacho;
+    view-timeline-axis: block;
+    animation-timeline: --pacho;
+    animation-name: recetas;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+@keyframes recetas{
+    from{
+        scale: 25%;
+    }
+    to{
+        scale: 100%;
+    }
+}
+.recetas.r1, .r3{
+    margin-left: 65vh;
+}
+.recetas p{
+    margin-left: 5vh;
+    font-size: 20px;
+}
+.recetas img{
+    width: 20vh;
+}
+.recetas .line{
+    background: gray;
+    width: 10px;
+    height: 23vh;
+    margin: 0 50px 0 40px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.recetas-p2{
+    background-image: url(../img/fondodemontañitas2.png);
+    width: 100%;
+    height: 92vh;
+    padding-top: 10vh;
 }
