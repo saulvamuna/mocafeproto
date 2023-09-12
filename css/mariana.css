@@ -789,3 +789,150 @@ a {
     height: 92vh;
     padding-top: 10vh;
 }
+
+
+
+
+
+
+@media (max-width: 1440px) {
+    .slider img{
+        margin-top: -6vh;
+    }
+    .objetc-ini{
+        width: 50%;
+        margin-top: -10vh;
+    }
+    .objetc-ini p{
+        font-size: 23px;
+    }
+    .text-sus{
+        margin-left: -5vh;
+    }
+
+    /*nosotros*/
+    .nosotros{
+        width: 35%;
+        margin-top: -8vh;
+        font-size: 40px;
+    }
+    .mivi{
+        width: 70%;
+    }
+    .mivi-text1{
+        width: 50%;
+    }
+    .miviline1{
+        height: 20vh;
+    }
+    .mivi-text2{
+        width: 50%;
+    }
+    .mivi-text1, .mivi-text2 p{
+        font-size: 20px;
+    }
+    .pacho{
+        margin-bottom: 5vh;
+    }
+    .pacho img{
+        width: 28vh;
+        height: 28vh;
+    }
+    .linenoso{
+        height: 28vh;
+    }
+    .texto-nosotros{
+        width: 50%;
+    }
+    .texto-nosotros p{
+        font-size: 20px;
+    }
+
+    /*productos*/
+    .imagen-fondo{
+        margin-top: 8vh;
+    }
+    .contenido-product img{
+        width: 70%;
+        height: 70vh;
+    }
+    .text-product h1 {
+        width: 58%;
+        margin-bottom: 13vh;
+        margin-left: 2vh;
+    }
+    .text-product p {
+        width: 75%;
+        font-size: 20px;
+        margin-left: 5vh;
+    }
+
+    .cono-prod{
+        margin-left: -5vh;
+    }
+    .cono-prod.cono2{
+        margin-left: -20vh;
+    }
+
+}
+
+@media (max-width: 1366px) {
+    .objetc-ini{
+        width: 50%;
+        margin-top: -6vh;
+    }
+    .objetc-ini p{
+        font-size: 20px;
+    }
+    .ace-content{
+        margin-bottom: -5vh;
+    }
+    .text-sus{
+        margin-left: -4vh;
+    }
+    .text-sus p{
+        margin-bottom: 3vh;
+    }
+    .terco{
+        width: 90%;
+        margin: auto;
+    }
+
+    /*nosotros*/
+    .nosotros{
+        width: 35%;
+        margin-top: -3vh;
+        font-size: 35px;
+    }
+    .mivi{
+        width: 70%;
+    }
+    .mivi-text1{
+        width: 50%;
+    }
+    .miviline1{
+        height: 16vh;
+    }
+    .mivi-text2{
+        width: 50%;
+    }
+    .mivi-text1, .mivi-text2 p{
+        font-size: 15px;
+    }
+    .pacho{
+        margin-bottom: 10vh;
+    }
+    .pacho img{
+        width: 28vh;
+        height: 28vh;
+    }
+    .linenoso{
+        height: 28vh;
+    }
+    .texto-nosotros{
+        width: 50%;
+    }
+    .texto-nosotros p{
+        font-size: 18px;
+    }
+}
