@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 a {
     text-decoration: none;
     color: #000;
@@ -149,8 +150,9 @@ a {
         margin-left: -300%;
     }
 }
-@keyframes imgslide{
-    0%{
+
+@keyframes imgslide {
+    0% {
         filter: blur(20px);
         /* margin-top: -50vh; */
     }
@@ -186,15 +188,17 @@ a {
     padding: 3px 5px 3px 5px;
     border-radius: 5px;
 }
-.texto-object p{
+
+.texto-object p {
     font-size: 30px;
 }
 
-@keyframes object-ini{
-    0%{
+@keyframes object-ini {
+    0% {
         scale: 25%;
     }
-    100%{
+
+    100% {
         scale: 100%;
     }
 }
@@ -218,11 +222,13 @@ a {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
-@keyframes ace{
-    from{
+
+@keyframes ace {
+    from {
         scale: 25%;
     }
-    to{
+
+    to {
         scale: 100%;
     }
 }
@@ -288,14 +294,17 @@ a {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
-@keyframes text-sus{
-    from{
+
+@keyframes text-sus {
+    from {
         transform: translateX(-50vh);
     }
-    to{
+
+    to {
         transform: translateX(20vh);
     }
 }
+
 .text-sus p {
     color: #fff;
     width: 68vh;
@@ -337,8 +346,8 @@ a {
     animation-duration: 2s;
 }
 
-@keyframes imgnosotros{
-    0%{
+@keyframes imgnosotros {
+    0% {
         transform: translateY(-50vh);
     }
 }
@@ -395,13 +404,15 @@ a {
     animation-name: mivi2;
     animation-duration: 2s;
 }
-@keyframes mivi1{
-    0%{
+
+@keyframes mivi1 {
+    0% {
         transform: translateX(-40vh);
     }
 }
-@keyframes mivi2{
-    0%{
+
+@keyframes mivi2 {
+    0% {
         transform: translateX(40vh);
     }
 }
@@ -424,11 +435,12 @@ a {
     width: 100%;
 }
 
-@keyframes showpacho{
-    from{
+@keyframes showpacho {
+    from {
         transform: translateX(-40vh);
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
 }
@@ -439,7 +451,7 @@ a {
     position: absolute;
     bottom: 28vh;
 
-    
+
 }
 
 .pacho img {
@@ -453,14 +465,17 @@ a {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
-@keyframes showpachoimg{
-    from{
+
+@keyframes showpachoimg {
+    from {
         scale: 25%;
     }
-    to{
+
+    to {
         scale: 100%;
     }
 }
+
 .texto-nosotros {
     display: flex;
     width: 40%;
@@ -513,8 +528,9 @@ a {
     margin-left: -10vh;
     animation: productimg 2s;
 }
-@keyframes productimg{
-    0%{
+
+@keyframes productimg {
+    0% {
         transform: translateX(-80vh);
     }
 
@@ -528,8 +544,9 @@ a {
     border-bottom: 2px solid #000;
     animation: producth1 2s;
 }
-@keyframes producth1{
-    0%{
+
+@keyframes producth1 {
+    0% {
         transform: translateY(-20vh);
     }
 
@@ -542,8 +559,9 @@ a {
     text-align: justify;
     animation: productp 2s;
 }
-@keyframes productp{
-    0%{
+
+@keyframes productp {
+    0% {
         transform: translateX(60vh);
     }
 
@@ -566,11 +584,13 @@ a {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
-@keyframes showproduc1{
-    from{
+
+@keyframes showproduc1 {
+    from {
         transform: translateX(-50vh);
     }
-    to{
+
+    to {
         transform: translateX(0vh);
     }
 }
@@ -604,23 +624,26 @@ a {
     margin-top: 15px;
     margin-right: 80px;
 }
-.cono-prod.cono2{
+
+.cono-prod.cono2 {
     view-timeline-name: --pacho;
     view-timeline-axis: block;
     animation-timeline: --pacho;
     animation-name: showproduc2;
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 25% cover 30%;
     animation-fill-mode: both;
 }
 
-@keyframes showproduc2{
-    from{
+@keyframes showproduc2 {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
+
 .cono-prod.cono2 .text-cono {
     margin-left: 50vh;
     padding-left: 5vh;
@@ -670,14 +693,17 @@ a {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
-@keyframes showcard{
-    from{
+
+@keyframes showcard {
+    from {
         scale: 25%;
     }
-    to{
+
+    to {
         scale: 100%;
     }
 }
+
 .cards-nosotros img {
     width: 38vh;
 }
@@ -694,27 +720,33 @@ a {
     border-radius: 10px;
 }
 
-.card-texto .a1{
+.card-texto .a1 {
     background: #ff5241;
 }
-.card-texto .a2{
+
+.card-texto .a2 {
     background: #c37ed2;
 }
-.card-texto .a3{
+
+.card-texto .a3 {
     background: #80ddf4;
 }
 
-.recetas-cabecera img{
+.recetas-cabecera img {
     width: 100%;
 
     animation: imgrecetas 2s;
 }
-@keyframes imgrecetas{
-    0%{
+
+@keyframes imgrecetas {
+    0% {
         transform: translateY(-60vh);
     }
 }
-.recetas-cabecera h1{
+
+/*RECETAS*/
+
+.recetas-cabecera h1 {
     font-size: 60px;
     border-bottom: 3px solid #000;
     width: 47%;
@@ -725,27 +757,55 @@ a {
     animation: h1cabecera 2s;
 }
 
-.recetas-cabecera p{
+.recetas-cabecera p {
     text-align: center;
     font-size: 33px;
     animation: h1cabecera 2s;
 }
-@keyframes h1cabecera{
-    0%{
-       scale: 25%;
+
+@keyframes h1cabecera {
+    0% {
+        scale: 25%;
     }
 }
-.recetas-p1{
-    background-image: url(../img/primerasrecetasfondo.png);
-    width: 100%;
-    height: 90vh; 
+
+
+
+.recetas-p1 {
+    position: relative;
     margin-top: 20vh;
 }
-.recetas{
+
+.recetas-p1 img {
+    width: 100%;
+    margin-bottom: -1vh;
+}
+
+.recetas-p2 {
+    position: relative;
+    margin-bottom: -.3vh;
+}
+
+.recetas-p2 img {
+    width: 100%;
+}
+
+.content-reseta {
+    position: absolute;
+    bottom: -8vh;
+    z-index: 200;
+}
+
+.content-reseta2 {
+    position: absolute;
+    top: 13vh;
+}
+
+.recetas {
     display: flex;
     align-items: center;
     width: 55%;
-    margin-left: 35vh;
+    margin-left: 30vh;
     margin-bottom: 5vh;
 
     view-timeline-name: --pacho;
@@ -756,25 +816,31 @@ a {
     animation-fill-mode: both;
 }
 
-@keyframes recetas{
-    from{
+@keyframes recetas {
+    from {
         scale: 25%;
     }
-    to{
+
+    to {
         scale: 100%;
     }
 }
-.recetas.r1, .r3{
-    margin-left: 65vh;
+
+.recetas.r1,
+.r3 {
+    margin-left: 60vh;
 }
-.recetas p{
+
+.recetas p {
     margin-left: 5vh;
     font-size: 20px;
 }
-.recetas img{
+
+.recetas img {
     width: 20vh;
 }
-.recetas .line{
+
+.recetas .line {
     background: gray;
     width: 10px;
     height: 23vh;
@@ -783,156 +849,397 @@ a {
     border-radius: 10px;
 }
 
-.recetas-p2{
-    background-image: url(../img/fondodemontañitas2.png);
-    width: 100%;
-    height: 92vh;
-    padding-top: 10vh;
-}
-
-
-
-
 
 
 @media (max-width: 1440px) {
-    .slider img{
+
+    .slider img {
         margin-top: -6vh;
     }
-    .objetc-ini{
+
+    .objetc-ini {
         width: 50%;
-        margin-top: -10vh;
+        margin-top: -4vh;
     }
-    .objetc-ini p{
+
+    .objetc-ini p {
         font-size: 23px;
     }
-    .text-sus{
-        margin-left: -5vh;
+
+    .ace {
+        margin-bottom: -4vh;
+    }
+
+    .text-sus {
+        margin-left: 2vh;
+    }
+
+    .text-sus p {
+        margin-bottom: 2vh;
+    }
+
+    .terco {
+        width: 90%;
     }
 
     /*nosotros*/
-    .nosotros{
+    .nosotros {
         width: 35%;
-        margin-top: -8vh;
-        font-size: 40px;
+        margin-top: -2vh;
+        font-size: 37px;
     }
-    .mivi{
-        width: 70%;
+
+    .mivi {
+        width: 60%;
     }
-    .mivi-text1{
+
+    .mivi-text1 {
         width: 50%;
     }
-    .miviline1{
+
+    .miviline1 {
         height: 20vh;
     }
-    .mivi-text2{
+
+    .mivi-text2 {
         width: 50%;
     }
-    .mivi-text1, .mivi-text2 p{
-        font-size: 20px;
+
+    .mivi-text1,
+    .mivi-text2 p {
+        font-size: 16px;
     }
-    .pacho{
-        margin-bottom: 5vh;
+
+    .pacho {
+        margin-bottom: 10vh;
     }
-    .pacho img{
+
+    .pacho img {
         width: 28vh;
         height: 28vh;
     }
-    .linenoso{
-        height: 28vh;
+
+    .linenoso {
+        height: 32vh;
     }
-    .texto-nosotros{
+
+    .texto-nosotros {
         width: 50%;
     }
-    .texto-nosotros p{
+
+    .texto-nosotros p {
         font-size: 20px;
     }
 
     /*productos*/
-    .imagen-fondo{
-        margin-top: 8vh;
+    .contenido-product img {
+        width: 85%;
+        height: 75vh;
     }
-    .contenido-product img{
-        width: 70%;
-        height: 70vh;
-    }
+
     .text-product h1 {
-        width: 58%;
-        margin-bottom: 13vh;
-        margin-left: 2vh;
+        width: 65%;
+        margin-bottom: 17vh;
     }
+
     .text-product p {
         width: 75%;
         font-size: 20px;
         margin-left: 5vh;
     }
 
-    .cono-prod{
-        margin-left: -5vh;
-    }
-    .cono-prod.cono2{
-        margin-left: -20vh;
+    .cono-prod {
+        margin-left: 5vh;
     }
 
+    .cono-prod.cono2 {
+        margin-left: -10vh;
+    }
+
+    .cono-prod.cono2 .text-cono {
+        width: 45%;
+    }
+
+    .cono-prod img {
+        width: 27%;
+    }
+
+    .cono-prod.cono2 img {
+        width: 22%;
+    }
+
+    .text-cono {
+        width: 50%;
+        padding: 20px 0 20px 10vh;
+    }
+
+    .cards-nosotros {
+        width: 75%;
+    }
+
+    .cards-nosotros img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .cards-nosotros h1 {
+        font-size: 20px;
+    }
+
+    .cards-nosotros a {
+        padding: 3px 8px;
+    }
+
+    /*RECETAS*/
+    .recetas-cabecera h1 {
+        width: 47%;
+        margin-top: 1vh;
+        font-size: 43px;
+    }
+
+    .recetas-cabecera p {
+        font-size: 25px;
+    }
+
+    .recetas-p1 {
+        position: relative;
+    }
+
+    .recetas-p1 img {
+        width: 100%;
+    }
+
+    .recetas-p2 {
+        position: relative;
+    }
+
+    .recetas-p2 img {
+        width: 100%;
+    }
+
+    .content-reseta {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .recetas img {
+        width: 18%;
+    }
+
+    .recetas h2 {
+        font-size: 23px;
+    }
+
+    .recetas p {
+        font-size: 15px;
+    }
+
+    .content-reseta2 {
+        position: absolute;
+        top: 15vh;
+    }
 }
 
 @media (max-width: 1366px) {
-    .objetc-ini{
-        width: 50%;
-        margin-top: -6vh;
+    .slider img {
+        margin-top: -16vh;
     }
-    .objetc-ini p{
+
+    .objetc-ini {
+        width: 50%;
+        margin-top: -4vh;
+    }
+
+    .objetc-ini p {
         font-size: 20px;
     }
-    .ace-content{
+
+    .ace-content {
         margin-bottom: -5vh;
     }
-    .text-sus{
-        margin-left: -4vh;
+
+    .ace {
+        z-index: 200;
     }
-    .text-sus p{
+
+    .text-sus {
+        width: 45%;
+        margin-top: -2vh;
+        margin-left: -8vh;
+    }
+
+    .text-sus p {
+        width: 100%;
         margin-bottom: 3vh;
     }
-    .terco{
+
+    .terco {
         width: 90%;
         margin: auto;
     }
 
     /*nosotros*/
-    .nosotros{
+    .nosotros {
         width: 35%;
-        margin-top: -3vh;
-        font-size: 35px;
+        margin-top: 4vh;
+        margin-bottom: -6vh;
+        font-size: 30px;
     }
-    .mivi{
-        width: 70%;
+
+    .mivi {
+        width: 80%;
     }
-    .mivi-text1{
+
+    .mivi-text1 {
         width: 50%;
     }
-    .miviline1{
+
+    .miviline1 {
         height: 16vh;
     }
-    .mivi-text2{
+
+    .mivi-text2 {
         width: 50%;
     }
-    .mivi-text1, .mivi-text2 p{
-        font-size: 15px;
+
+    .mivi-text1,
+    .mivi-text2 p {
+        font-size: 14px;
     }
-    .pacho{
+
+    .pacho {
         margin-bottom: 10vh;
     }
-    .pacho img{
-        width: 28vh;
-        height: 28vh;
+
+    .pacho img {
+        width: 40vh;
+        height: 40vh;
     }
-    .linenoso{
-        height: 28vh;
+
+    .linenoso {
+        height: 32vh;
     }
-    .texto-nosotros{
+
+    .texto-nosotros {
         width: 50%;
     }
-    .texto-nosotros p{
+
+    .texto-nosotros p {
         font-size: 18px;
+    }
+
+    /*productos*/
+    .imagen-fondo {
+        margin-top: -5vh;
+    }
+
+    .contenido-product img {
+        width: 90%;
+        height: 85vh;
+    }
+
+    .text-product h1 {
+        width: 70%;
+        margin-bottom: 17vh;
+    }
+
+    .text-product p {
+        width: 75%;
+        font-size: 20px;
+        margin-left: 5vh;
+    }
+
+    .cono-prod {
+        margin-left: 5vh;
+    }
+
+    .cono-prod.cono2 {
+        margin-left: -10vh;
+    }
+
+    .cono-prod.cono2 .text-cono {
+        width: 45%;
+    }
+
+    .cono-prod img {
+        width: 27%;
+    }
+
+    .cono-prod.cono2 img {
+        width: 22%;
+    }
+
+    .text-cono {
+        width: 50%;
+        padding: 20px 0 20px 10vh;
+    }
+
+    .cards-nosotros {
+        width: 75%;
+        margin-bottom: -10vh;
+    }
+
+    .cards-nosotros img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .cards-nosotros h1 {
+        font-size: 20px;
+    }
+
+    .cards-nosotros a {
+        padding: 3px 8px;
+    }
+
+    /*RECETAS*/
+    .recetas-cabecera h1 {
+        width: 40%;
+        margin-top: -3vh;
+        font-size: 33px;
+    }
+
+    .recetas-cabecera p {
+        font-size: 20px;
+    }
+
+    .recetas-p1 {
+        position: relative;
+    }
+
+    .recetas-p1 img {
+        width: 100%;
+    }
+
+    .recetas-p2 {
+        position: relative;
+    }
+
+    .recetas-p2 img {
+        width: 100%;
+    }
+
+    .content-reseta {
+        position: absolute;
+        bottom: -8vh;
+        z-index: 200;
+    }
+
+    .recetas img {
+        width: 18%;
+    }
+
+    .recetas h2 {
+        font-size: 23px;
+    }
+
+    .recetas p {
+        font-size: 15px;
+    }
+
+    .content-reseta2 {
+        position: absolute;
+        top: 28vh;
+        z-index: 200;
     }
 }
